@@ -31,9 +31,9 @@ import os
 import wave
 from playsound import playsound
 
-STATUS_FIRST_FRAME = 0  # 第一帧的标识
-STATUS_CONTINUE_FRAME = 1  # 中间帧标识
-STATUS_LAST_FRAME = 2  # 最后一帧的标识
+STATUS_FIRST_FRAME = 0  # first frame ID
+STATUS_CONTINUE_FRAME = 1  # Intermediate frame ID
+STATUS_LAST_FRAME = 2  # last frame ID
 
 PCM_PATH = "./demo.pcm"
 
@@ -170,7 +170,7 @@ def pcm2wav(fname, dstname):
 
 wsParam = Ws_Param()
 
-# 注意一下需要填入自己的appid、api_secret、api_key
+# Note that you need to fill in your own appid, api_secret, api_key
 if __name__ == "__main__":
 
     playsound( text2wav(appid='51060aa3',
